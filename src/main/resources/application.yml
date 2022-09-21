@@ -1,0 +1,21 @@
+spring:
+    datasource:
+        password: ${DB_PASSWORD}
+        url: jdbc:mysql://localhost:3306/UserDB
+        username: product
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+    security:
+        oauth2:
+            client:
+                registration:
+                    facebook:
+                        client-id: 700131347916748
+                        client-secret: cc12530092118c6bb803c86ac2f50efb
+                    google:
+                        client-id: 663223893083-lh1hh94q88jcg379e8evkgsj0q292knr.apps.googleusercontent.com
+                        client-secret: cc12530092118c6bb803c86ac2f50efb
